@@ -1,0 +1,159 @@
+#butt {
+   font-size:24px;
+    color:gray;
+}
+body {
+    background-color:rgb(200, 200, 200);
+}
+.logo {
+    position: relative;
+    right: 660px;
+    bottom: 6px;
+}
+#row {
+    position: relative;
+    left: 90px;
+    bottom: 0px;
+    //text-align: left;
+}
+#thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.nav {
+    height: 85px;;
+}
+.profile {
+    background-color: white;
+    padding: 90px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+#profile_pic {
+      position: relative;
+      bottom: 70px;
+}
+.name ,.username, .bio, .location{
+     font-family: 'Ubuntu', sans-serif;
+      position: relative;
+      bottom: 60px;
+}
+#ausername {
+    opacity: 0.8;
+}
+.bio_font,#location_font {
+    font-size: 13px;
+    opacity: 0.7;
+}
+#dm{
+  background-color: #304ffe;
+  color:#f2f2f2;
+  border: none;
+  border-radius: 70px;
+  padding: 10px 20px;
+  position: relative;
+  right: 30px;
+
+}
+.activity_buttons {
+     position: relative;
+     bottom: 50px;
+     left: 20px;
+}
+#follow {
+  background-color: #dddddd;
+  color:#666666;
+  border: none;
+  width: 100px;
+  border-radius: 25px;
+
+}
+.line {
+    width: 150%;
+     position: relative;
+     right: 60px;
+     bottom: 20px;
+}
+#in_tags {
+	color: white;
+	width: 75px;
+	height: 30px;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 30px;
+	background-color:rgb(0, 0, 255);
+ }
+.elsewhere {
+   font-size:30px;
+   padding: 5px;
+   margin: 10px;
+}
+#social {
+     margin: 2px;
+}
+.review {
+     position: relative;
+     bottom: 60px;
+}
+.link {
+     position: relative;
+     top: 20px;
+     right: 160px;
+     font-weight:bold;
+     font-size: 20px;
+}
+.rating {
+   position: relative;
+   left: 200px;
+   bottom: 5px;
+}
+.review_title {
+     position: relative;
+     right: 160px;
+     top: 5px;
+}
+.date {
+     position: relative;
+     right: 200px;
+     top: 5px;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.card {
+     position: relative;
+     top: 20px;
+     right: 60px;
+}
+.user {
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 15px;
+     opacity: 0.8;
+}
+.opinion {
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    top:15px;
+    left: 15px;
+    color:#304ffe;
+    font-weight:bold;
+}
+#button_review{
+    width:70px;
+    margin: 5px;
+	border-radius: 20px;
+}
+.button_moves {
+    position: relative;
+    top: 20px;
+    left: 40px;
+
+}
+.color_static {
+   background-color: white;
+    position: relative;
+    left:35px;
+      border-radius: 20px;
+      margin-bottom:70px;
+ }
