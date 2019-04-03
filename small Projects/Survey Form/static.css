@@ -1,0 +1,118 @@
+/* Start Header */
+* {
+    -wibkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+body {
+      background-color: #a9d7d1;
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+       min-width: 320px;
+}
+header {
+    margin: 30px;
+
+}
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.form-outer {
+    padding-top: 20px;
+    margin: 10px auto;
+    width: 75%;
+    padding: 15px;
+    max-width: 900px;
+    background: #FFF;
+    border-radius: 5px;
+}
+.labels {
+    text-align: right;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding: 5px;
+    margin-top: 10px;
+}
+.rightTab {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    text-align:left;
+    width: 48%;
+}
+.input-field {
+    width: 270px;
+    height: 35px;
+    border: 1px solid #DDD;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.dropdown {
+    width: 35%;
+    height: 35px;
+    background-color: #DDD;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 2px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+.userRatings {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.radio, .checkbox {
+  position: relative;
+  left: -41px;
+}
+#textarea {
+    border-radius: 4px;
+    padding: 10px;
+}
+#submit {
+    width: 15%;
+    height: 40px;
+    border: 0px solid;
+    color: #FFF;
+    border-radius: 4px;
+    margin: 10px;
+    background-color: #59ace0;;
+}
+@media screen and (max-width: 520px) {
+        .labels {
+            float: left;
+        }
+        .rightTab {
+            width: 80%;
+            text-align: left;
+        }
+        .input-field {
+            width: 100%;
+        }
+        .select{
+          width: 100%;
+        }
+
+}
+@media screen and (max-width: 800px)  {
+    .input-field {
+        width: 90%;
+    }
+    select {
+        width: 90%;
+    }
+    .dropdown {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+header {
+
+    padding: 0px;
+
+    width: 100%;
+}
+#pic_logo {
+    width: 22%;
+    height: 95px;
+}
+
+}
+.logo {
+    padding: 10px;
+}
+#nav_bar {
+     float: right;
+     margin-top: -90px;
+     text-decoration: none;
+}
+nav ul {
+    padding: 10px;
+}
+#link{
+    color: black;
+    text-decoration: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#email {
+    width: 25%;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+}
+@media (max-width: 550px) {
+    #email {
+        width: 60%;
+       height: 35px;
+    }
+      #form  h2 {
+        font-size: 20px;
+    }
+
+}
+
+#submit {
+    background-color: #f1c40f;
+    margin: 10px;
+    width: 10%;
+}
+@media (max-width: 600px) {
+    #submit {
+        width: 20%;
+    }
+}
+.btn {
+    background-color: #f1c40f;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 40px;
+}
+.@media (max-width: 550px) {
+    width: 100%;
+     justify-content: center;
+}
+.grid {
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    color: darkorange;
+    font-size: 18px;
+}
+@media (max-width: 550px) {
+    .icon {
+           display: none;
+       }
+     }
+
+.opinion {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 85%;
+      margin: 20px;
+}
+@media (max-width: 550px) {
+    .opinion {
+       width: 100%;
+       text-align: center;
+         height: 150px;
+        padding: 0px;
+    }
+    .opinion  h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 550px) {
+    .grid {
+          position: relative;
+          right: 30px;
+      }
+}
+.opinion  h2 {
+    font-weight: bold;
+}
+#features {
+    margin: 30px;
+    margin-left: 40px;
+}
+iframe {
+    border: 1px solid #EEE;
+    width: 100%;
+}
+
+.output {
+    background: #eee;
+}
+#how_it_work {
+    margin: 20px auto;
+    width: 50%;
+}
+@media (max-width: 550px) {
+   #how_it_work {
+    margin: 10px auto;
+    width: 90%;
+    }
+}
+.money {
+    width: 25%;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+.level {
+      text-transform: uppercase;
+      background-color: #DDD;
+      align-items: center;
+      color: black;
+      height: 45px;
+      padding: 10px;
+      border-radius: 4px;
+}
+.money h3 {
+    color: black;
+    padding-top: 20px;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+    padding: 10px;
+}
+ul li {
+    padding: 5px;
+    color: black;
+    font-size: 18px;
+}
+.btn_select {
+    background-color: #f1c40f;
+    color: black;
+    text-transform: uppercase;
+     width: 30%;
+     border: none;
+     border-radius: 4px;
+     height: 40px;
+     font-size: 18px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 998px) {
+    .content {
+        flex-direction: column;
+
+    }
+    .money {
+        width: 40%;
+        margin: 10px auto;
+     }
+
+}

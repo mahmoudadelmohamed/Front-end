@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>responsive</title>
+
+</head>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+              crossorigin="anonymous">
+            <link rel="stylesheet" href="static.css">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<body>
+      <header> <h1>Survey Form </h1> </header>
+        <div class="form-outer">
+                <p> Let us know how we can improve freeCodeCamp</p>
+       <form method="GET" action="www.facebook.com">
+        <div class="rowTab">
+              <div class="labels">
+                 <label> *Name </label>
+             </div>
+            <div class="rightTab">
+                <input type="text" class="input-field" placeholder="Enter Your Name"  >
+            </div>
+        </div>
+         <div class="rowTab">
+              <div class="labels">
+                 <label> *Email </label>
+             </div>
+            <div class="rightTab">
+                <input type="Email" class="input-field" placeholder="Enter Your Email" >
+            </div>
+        </div>
+
+         <div class="rowTab">
+              <div class="labels">
+                 <label> *Age </label>
+             </div>
+            <div class="rightTab">
+                <input type="number" class="input-field" placeholder="Age" name="age" min="1" max="125">
+            </div>
+        </div>
+          <div class="rowTab">
+            <div class="labels">
+                <p> Which option best describes your current role? </p>
+            </div>
+        <div class="rightTab">
+          <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option  value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+          </select>
+        </div>
+       </div>
+      <div class="rowTab">
+            <div class="labels">
+                <p> Things that should be improved in the future(Check all that apply):</p>
+       </div>
+      <div class="rightTab">
+        <ul>
+           <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+           <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+           <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+       </div>
+     </div>
+    <div class="rowTab">
+            <div class="labels">
+                <p>What do you like most in FCC:</p>
+            </div>
+        <div class="rightTab">
+             <select id="Like" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option  value="challenge">Challenge</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="source">Open Source</option>
+          </select>
+        </div>
+    </div>
+           <div class="rowTab">
+               <div class="labels">
+                  <p> Things that should be improved in the future(Check all that apply) </p>
+               </div>
+               <div class="rightTab">
+                   <ul>
+                        <li class="checkbox"><label>Front-end Projects <input name="checkbox-buttons" value="1"  type="checkbox" class="userRatings" > </label></li>
+                        <li class="checkbox"><label>Back-end Projects <input name="checkbox-buttons" value="2"  type="checkbox" class="userRatings" > </label></li>
+                        <li class="checkbox"><label>Data Visualization <input name="checkbox-buttons" value="3"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>Challenges <input name="checkbox-buttons" value="4"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>Open Source Community <input name="checkbox-buttons" value="5"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>Gitter help rooms <input name="checkbox-buttons" value="6"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>Videos <input name="checkbox-buttons" value="7"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>City Meetups <input name="checkbox-buttons" value="8"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>Wiki <input name="checkbox-buttons" value="9"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>Forum <input name="checkbox-buttons" value="10"  type="checkbox" class="userRatings" > </label></li>
+                       <li class="checkbox"><label>Additional Courses <input name="checkbox-buttons" value="11"  type="checkbox" class="userRatings" > </label></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="rowTab">
+               <div class="labels">
+                     <p> Any Comments or Suggestions? </p>
+               </div>
+           <div class="rightTab">
+               <textarea name="opinion" id="textarea"  placeholder="Enter Your Comment Here..." class="input-field" style="height: 70px; width: 80%;"></textarea>
+           </div>
+           </div>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+-  </div>
+
+
+
+
+
+
+
+
+        <script src="js/jquery-1.12.4.min.js"> </script>
+        <script src="js/custom.js"> </script>
+    </body>
+</html>
