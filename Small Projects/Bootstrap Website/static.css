@@ -1,0 +1,218 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+
+}
+body {
+  height: 2000px;
+}
+.upper-bar {
+  background-color: #08526d;
+  color: #FFF;
+  padding: 10px;
+}
+.upper-bar span {
+  color: #bfc6c9;
+}
+.get-quote {
+  display: inline-block;
+  border: 1px solid #D67400;
+  padding: 2px 10px;
+  margin-left: 20px;
+}
+/* Start Navbar*/
+.navbar-brand span {
+  font-size: 40px;
+}
+.navbar-brand span:first-child{
+    font-weight: bold;
+    color: #08526d;
+}
+.navbar-brand span:last-child{
+    color: #D67400;
+}
+.navbar-light .navbar-nav .nav-link {
+    margin-left: 15px;
+    color: #08526d;
+    font-size: 16px;
+    text-transform: uppercase;
+      font-weight: bold;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-nav {
+      color: #D67400;
+}
+ /* End Navbar*/
+/* Start Slider*/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .5);
+}
+.slider {
+  background: #DDD;
+}
+.slider .carousel-item {
+    background-size: cover;
+}
+.carousel-inner {
+   display: flex;
+   align-items: center;
+   justify-content: left;
+}
+.carousel-inner h1 {
+  position: absolute;
+  z-index: 3;
+  color: #FFF;
+  font-size: 50px;
+  max-width: 900px;
+  line-height: 1.5;
+  left: 50px;
+}
+.carousel-inner h1 span {
+  padding: 2px 10px;
+  background: #D67400;
+}
+.carousel-one {
+  background-image: url("imgs/tam.jpg");
+}
+.carousel-two {
+  background-image: url("imgs/tame-impala-illustration1.gif");
+}
+.carousel-three {
+  background-image: url("imgs/tameimpala1.jpeg");
+}
+.carousel-indicators li {
+  height: 8px;
+  cursor: pointer;
+  color: #D67400;
+}
+/* End Slider*/
+/* Start Features*/
+.features {
+    padding: 50px 0px;
+}
+.features i {
+  background-color: #D67400;
+  color: #FFF;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.features h3 {
+  color: #08526d;
+  font-size: 22px;
+}
+.features p {
+  color: #5a5656;
+  margin-bottom: 40px;
+}
+/* End Features*/
+
+/* Start Overview*/
+.overview {
+  padding: 100px;
+  background-color: #f0f5f7;
+}
+.overview h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.overview p {
+    line-height: 2;
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto 22px;
+    color: #887b7b;
+}
+.overview h4 {
+    font-family: 'Press Start 2P', cursive;
+    color: #867272;
+    margin-bottom: 40px;
+}
+.overview button {
+    background-color: #D67400;
+    color: #FFF;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #D67400;
+}
+/* End Overview*/
+
+/* Start Featured Works*/
+.features-work {
+  padding: 100px;
+}
+.features-work p {
+    line-height: 1.8;
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto 22px;
+    color: #887b7b;
+}
+.features-work ul {
+    margin-top: 40px;
+}
+.features-work ul li {
+  padding: 10px 20px;
+  color: #08526d;
+  border: 1px solid #08526d;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.features-work ul li.active, .features-work ul li:hover {
+    background-color: #D67400;
+    border: 2px solid #D67400;
+    color: #FFF;
+}
+.features-work ul li:hover {
+  cursor: pointer;
+}
+.features-work h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.features-work img{
+      width: 100%;
+      height: 300px;
+}
+.features-work .shuffle-images {
+  margin-top: 50px;
+}
+.features-work .row .col-sm {
+  padding: 0px;
+}
+/* End Featured Works*/
+
+/* Start latest post*/
+.latest-post {
+  padding: 0px 0px 100;
+}
+.latest-post .section-description {
+  line-height: 1.8;
+   width: 80%;
+  margin: 0 auto 45px;
+
+}
+.latest-post h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.latest-post .card .card-title {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #08526d;
+}
+.latest-post .card .card-text {
+  margin-bottom: 5px;
+  color: #787878;
+}
+.latest-post .card .card-link {
+    color:  #D67400;
+    font-weight: bold;
+}
