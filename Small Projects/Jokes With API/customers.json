@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "company": "123 Designs",
+    "phone": "444-555-666"
+  },
+  {
+    "id": 2,
+    "name": "Natalie Portman",
+    "company": "7895 Designs",
+    "phone": "111-222-333"
+  },
+  {
+    "id": 3,
+    "name": "John Snow",
+    "company": "3659 Designs",
+    "phone": "777-888-999"
+  }
+
+]
