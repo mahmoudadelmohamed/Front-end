@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopping</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="static.css">
+</head>
+
+<body>
+
+  <!-- Start Navbar -->
+  <div class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <img src="images/logo.svg" alt="store logo">
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="card-items">0</div>
+      </div>
+    </div>
+  </div>
+  <!-- End Navbar -->
+
+  <!-- Start Banner -->
+  <header class="head">
+    <div class="banner">
+      <h1 class="banner-title" >furniture collection</h1>
+      <a href="#move"> <button class="banner-btn"> Shop now</button></a>
+
+    </div>
+  </header>
+  <!-- End Banner -->
+
+  <!--Start Products -->
+  <section class="products">
+    <div class="section-tittle">
+      <h2 id="move">our products</h2>
+    </div>
+    <div class="products-center">
+    </div>
+  </section>
+  <!-- End Products -->
+
+  <!-- Start Cart -->
+ <div class="cart-overlay">
+   <div class="cart">
+      <span class="close-cart"> <i class="fas fa-window-close"></i></span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+
+      </div>
+      <div class="cart-footer">
+        <h3>your total : $ <span class="cart-total">0</span> </h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+      </div>
+   </div>
+
+ </div>
+  <!-- End Cart -->
+  <script src="shopping.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
