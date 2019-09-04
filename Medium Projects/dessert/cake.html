@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+
+  <link rel="stylesheet" href="css/cakeStyle.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <!--  CDN for pop up alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>Cart Project</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <a href="#" class="btn up-link text-uppercase my-2" id="upButton">
+      <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- start header -->
+<header id="header">
+   <!--start navbar -->
+  <nav class="navbar navbar-expand-lg px-4 bg-dark" >
+    <a href="index.html" class="navbar-brand">
+      <img src="imgs/logo.svg" alt="logo">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+      <span class="toggler-icon"><i class="fas fa-bars"></i> </span>
+    </button>
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="navbar-nav text-capitalize mx-auto">
+    <li class="nav-item active">
+      <a href="index.html" class="nav-link">home</a>
+    </li>
+    <li class="nav-item active">
+      <a href="about.html" class="nav-link">about</a>
+    </li>
+    <li class="nav-item active">
+      <a href="#store" class="nav-link">store</a>
+    </li>
+    <li class="nav-item active">
+      <a href="#services" class="nav-link">services</a>
+    </li>
+    <li class="nav-item active">
+      <a href="#cakes" class="nav-link">order</a>
+    </li>
+  </ul>
+  <div class="nav-info-item d-none d-lg-flex justify-content-between mx-lg-5">
+     <span class="info-icon mx-lg-3">
+       <i class="fas fa-phone"></i>
+     </span>
+     <p class="mb-0">+123 456 789</p>
+  </div>
+  <div class="nav-info align-item-center cart-info d-none d-lg-flex justify-content-between mx-lg-5">
+    <span class="cart-info-icon mr-lg-3">
+      <i class="fas fa-shopping-cart"></i>
+    </span>
+      <p class="mb-0 text-capitalize">
+        <span id="item-count">0</span>
+        items - $
+        <span class="item-total">0.00</span>
+      </p>
+  </div>
+</div>
+  </nav>
+  <!--end navbar -->
+
+  <!-- banner -->
+<div class="container-fluid">
+  <div class="row max-height justify-content-center align-items-center">
+    <div class="col-10 mx-auto banner text-center">
+      <h1 class="text-capitalize">
+        welcome to <strong class="banner-title">our products</strong>
+      </h1>
+      <a href="index.html" class="btn banner-link text-uppercase my-2"> back to home</a>
+    </div>
+    <div class="cart" id="cart">
+
+
+      <div class="cart-total-container d-flex justify-content-around mt-5 text-capitalize">
+        <h5>total</h5>
+        <h5>$ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+      </div>
+      <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+        <a href="#" id="clear-cart" class="btn btn-black text-uppercase">clear cart</a>
+          <a href="#" id="close-cart" class="btn btn-yellow text-uppercase">close cart</a>
+      </div>
+    </div>
+    <!-- end cart -->
+  </div>
+</div>
+  <!-- end banner -->
+</header>
+<!-- end header -->
+<section id="store" class="store py-5">
+<div class="container">
+  <div class="row">
+    <div class="col-10 mx-auto col-sm-6 text-center py-4">
+      <h1 class="text-capitalize">our <strong class="banner-title">products</strong> </h1>
+    </div>
+  </div>
+  <!-- search box -->
+  <div class="row">
+    <div class="col-10 mx-auto col-md-6">
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text search-box" id="search-icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control" id="search-item" placeholder="item...">
+        </div>
+      </form>
+    </div>
+  </div>
+   <h3 class="col-10 mx-auto col-sm-6 text-center text-capitalize not-found">This item not found</h3>
+  <!--end search box -->
+  <div class="row store-items">
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" >
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-8.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="1">
+            <span data-id="1" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="1"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-one</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod" data-id="1">15.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-10.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="2">
+            <span data-id="2" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="2"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-two</h5>
+         <h5 class="stror-item-value"> $
+           <strong id="store-item-price" class="font-weight-blod" data-id="2">10.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-7.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="3">
+            <span data-id="3" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="3"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-three</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod"  data-id="3">12.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-5.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="4">
+            <span data-id="4" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="4"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-four</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod" data-id="4">13.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-4.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="5">
+            <span data-id="5" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="5"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-five</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod" data-id="5">20.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-11.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="6">
+            <span data-id="6" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="6"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-six</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod" data-id="6">7.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-2.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="7">
+            <span data-id="7" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="7"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-seven</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod" data-id="7">10.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-9.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="8">
+            <span data-id="8" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="8"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-eight</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod" data-id="8">15.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet">
+      <div class="card single-item">
+        <div class="img-container">
+          <img src="img-cake/cake-1.jpg" class="card-img-top store-img" alt="">
+          <button type="button" name="button" class="store-item-icon" data-id="9">
+            <span data-id="9" class="shoping">
+              <i class="fas fa-shopping-cart" data-id="9"></i>
+            </span>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="cart-text d-flex justify-content-between text-capitalize">
+            <h5 class="store-item-name">cake-nine</h5>
+            <h5 class="stror-item-value"> $ <strong id="store-item-price"
+              class="font-weight-blod" data-id="9">10.00</strong> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 footer-title py-5">
+          <h1 class="text-capitalize text-center">
+            <strong class="banner-title"> Bakeology</strong>
+          </h1>
+          <div class="footer-icons my-3 d-flex justify-content-center flex-wrap">
+            <a href="www.facebook.com" class="footer-icon-social"><i class="fab fa-facebook"></i> </a>
+            <a href="www.twitter.com" class="footer-icon-social"><i class="fab fa-twitter"></i> </a>
+            <a href="www.instagram.com" class="footer-icon-social"><i class="fab fa-instagram"></i> </a>
+            <a href="www.google.com" class="footer-icon-social"><i class="fab fa-google-plus"></i> </a>
+          </div>
+        </div>
+        <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+          <h3 class="mb-5" id="contect">contact</h3>
+          <p class="d-flex flex-wrap ">
+            <span class="mr-4 footer-icon">
+              <i class="fas fa-map"></i>
+            </span>
+            <span>123 main street, san diago CA 9012</span>
+          </p>
+          <p class="d-flex flex-wrap ">
+            <span class="mr-4 footer-icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>email@email.com</span>
+          </p>
+          <p class="d-flex flex-wrap ">
+            <span class="mr-4 footer-icon">
+              <i class="fas fa-phone"></i>
+            </span>
+            <span>+123 456 789</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/products.js"></script>
+</body>
+
+</html>

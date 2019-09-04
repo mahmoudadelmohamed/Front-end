@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/static.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Cart Project</title>
+  <style>
+  </style>
+</head>
+
+<body>
+<div class="preloader">
+  <img src="imgs/loading.gif" alt="">
+</div>
+<a href="#" class="btn up-link text-uppercase my-2" id="upButton">
+    <i class="fas fa-arrow-up"></i>
+</a>
+  <!-- start header -->
+<header id="header">
+   <!--start navbar -->
+  <nav class="navbar navbar-expand-lg px-4 bg-dark" >
+    <a href="index.html" class="navbar-brand">
+      <img src="imgs/logo.svg" alt="logo">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+       <span class="toggler-icon"><i class="fas fa-bars"></i> </span>
+     </button>
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="navbar-nav text-capitalize">
+    <li class="nav-item active">
+      <a href="index.html" class="nav-link">home</a>
+    </li>
+    <li class="nav-item active">
+      <a href="#about" class="nav-link">about</a>
+    </li>
+    <li class="nav-item active">
+      <a href="#store" class="nav-link">store</a>
+    </li>
+    <li class="nav-item active">
+      <a href="#services" class="nav-link">services</a>
+    </li>
+    <li class="nav-item active">
+      <a href="#cakes" class="nav-link">order</a>
+    </li>
+  </ul>
+  <div class="nav-info-item d-none d-lg-flex justify-content-between mx-lg-5">
+     <span class="info-icon mx-lg-3">
+       <i class="fas fa-phone"></i>
+     </span>
+     <p class="mb-0 justify-content-end" >+123 456 789</p>
+  </div>
+
+</div>
+  </nav>
+  <!--end navbar -->
+
+  <!-- banner -->
+<div class="container-fluid">
+  <div class="row max-height justify-content-center align-items-center">
+    <div class="col-10 mx-auto banner text-center">
+      <h1 class="text-capitalize">
+        welcome to <strong class="banner-title">Bakeology's</strong>
+      </h1>
+      <a href="#store" class="btn banner-link text-uppercase my-2"> explore</a>
+    </div>
+    <!-- cart -->
+    <div class="cart" id="cart">
+      <!-- single item inner cart -->
+      <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+        <img src="img-cart/cupcake-1.jpeg" class="img-fluid rounded-circle" id="item-img">
+        <div class="item-text">
+          <p id="cart-item-title" class="font-weight-bold mb-0">
+            cart item
+            </p>
+            <span>$</span>
+            <span class="cart-item-price" class="cart-item-price mb-0">10.99</span>
+        </div>
+        <a href="#" id="cart-item-remove" class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
+      <!-- end single item inner cart -->
+      <!-- single item inner cart -->
+      <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+        <img src="img-cart/sweets-1.jpeg" class="img-fluid rounded-circle" id="item-img">
+        <div class="item-text">
+          <p id="cart-item-title" class="font-weight-bold mb-0">
+            cart item
+            </p>
+            <span>$</span>
+            <span class="cart-item-price" class="cart-item-price mb-0">10.99</span>
+        </div>
+        <a href="#" id="cart-item-remove" class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
+      <!-- end single item inner cart -->
+      <div class="cart-total-container d-flex justify-content-around mt-5 text-capitalize">
+        <h5>total</h5>
+        <h5>$ <strong id="cart-total" class="font-weight-bold">10.00</strong> </h5>
+      </div>
+      <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+        <a href="#" id="clear-cart" class="btn btn-black text-uppercase">clear cart</a>
+          <a href="#" id="clear-cart" class="btn btn-yellow text-uppercase">clear cart</a>
+      </div>
+    </div>
+    <!-- end cart -->
+  </div>
+</div>
+  <!-- end banner -->
+</header>
+<!-- end header -->
+
+<!-- about  -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-6 mx-auto">
+          <h1 class="text-capitalize">about <strong class="banner-title">us</strong> </h1>
+          <p class="text-muted my-5 w-75">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Recusandae eos ipsa magnam magni iusto animi et temporibus
+          voluptatibus, ut quis, minus dolorum in sit officiis deleniti
+          optio ducimus natus fuga?
+          </p>
+          <a href="about.html" class="btn btn-black text-uppercase">explore</a>
+       </div>
+      <div class="col-10 col-md-6 mx-auto align-self-center my-5">
+       <div class="about-img-container">
+         <img src="imgs/dounat-11.jpg" alt="" class="img-fluid">
+       </div>
+     </div>
+    </div>
+  </section>
+<!-- end about  -->
+
+<section id="store" class="store py-5">
+  <div class="container">
+    <!-- section title -->
+  <div class="row">
+    <div class="col-10 mx-auto col-sm-6 text-center">
+      <h1 class="text-capitalize">our <strong class="banner-title">store</strong> </h1>
+    </div>
+  </div>
+  <!-- end section title -->
+  <!-- fillter button -->
+  <div class="row">
+    <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+      <a href="#" class="btn btn-black text-uppercase filter-btn m-2" filter-data="all">all</a>
+      <a href="cake.html" class="btn btn-black text-uppercase filter-btn m-2" filter-data="all">cakes</a>
+      <a href="cupcake.html" class="btn btn-black text-uppercase filter-btn m-2" filter-data="all">cupcakes</a>
+       <a href="doughnut.html" class="btn btn-black text-uppercase filter-btn m-2" filter-data="all">dougnuts</a>
+    </div>
+  </div>
+  <!-- end fillter button -->
+
+<!-- store items -->
+  <div class="row store-items" id="store-items">
+    <!-- single item -->
+   <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+    <div class="card single-item">
+      <div class="img-container">
+        <img src="imgs/sweets-1.jpeg" class="card-img-top store-img" name="imgs/sweets-1.jpeg">
+        <span class="store-item-icon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- end single item -->
+  <!-- single item -->
+ <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+  <div class="card single-item">
+    <div class="img-container">
+      <img src="imgs/sweets-2.jpeg" class="card-img-top store-img" name="imgs/sweets-2.jpeg">
+      <span class="store-item-icon">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+  </div>
+</div>
+<!-- end single item -->
+<!-- single item -->
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+<div class="card single-item">
+  <div class="img-container">
+    <img src="imgs/sweets-3.jpeg" class="card-img-top store-img" name="imgs/sweets-3.jpeg">
+    <span class="store-item-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>
+</div>
+<!-- end single item -->
+<!-- single item -->
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+<div class="card single-item">
+  <div class="img-container">
+    <img src="imgs/cupcake-1.jpeg" class="card-img-top store-img" name="imgs/cupcake-1.jpeg">
+    <span class="store-item-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>
+</div>
+<!-- end single item -->
+
+<!-- single item -->
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+<div class="card single-item">
+  <div class="img-container">
+    <img src="imgs/dounat-5.jpg" class="card-img-top store-img" name="imgs/dounat-5.jpg">
+    <span class="store-item-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>
+</div>
+<!-- end single item -->
+
+<!-- single item -->
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+<div class="card single-item">
+  <div class="img-container">
+    <img src="imgs/cake-2.jpeg" class="card-img-top store-img" name="imgs/cake-2.jpeg">
+    <span class="store-item-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>
+</div>
+<!-- end single item -->
+<!-- single item -->
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+<div class="card single-item">
+  <div class="img-container">
+    <img src="imgs/doughnut-1.jpeg" class="card-img-top store-img" name="imgs/doughnut-1.jpeg">
+    <span class="store-item-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>
+</div>
+<!-- end single item -->
+
+<!-- single item -->
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+<div class="card single-item">
+  <div class="img-container">
+    <img src="imgs/cupcake-3.jpeg" class="card-img-top store-img" name="imgs/cupcake-3.jpeg">
+    <span class="store-item-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>
+</div>
+<!-- end single item -->
+<!-- single item -->
+<div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweet" data-item="sweet">
+<div class="card single-item">
+  <div class="img-container">
+    <img src="imgs/cupcake-2.jpeg" class="card-img-top store-img" alt="">
+    <span class="store-item-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>
+</div>
+<!-- end single item -->
+
+
+  <div class="work-modle">
+    <div class="work-modle-item"></div>
+     <div class="work-window-close">
+       <i class="fas fa-window-close"></i>
+     </div>
+  </div>
+  </div>
+</section>
+  <!-- services -->
+  <section id="services" class="services py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center my-3">
+          <img src="imgs/bread-icon.png" alt="bread icon">
+          <h6 class="text-uppercase my-3 services-title">bread</h6>
+          <p class="w-75 mx-auto text-left services-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ipsam iure molestiae dicta dolores quos sed vero corrupti. Sequi, minima, facilis!</p>
+        </div>
+        <div class="col-md-4 text-center my-3">
+          <img src="imgs/cupcake-icon.png" alt="bread icon">
+          <h6 class="text-uppercase my-3 services-title">cupcakes</h6>
+          <p class="w-75 mx-auto text-left services-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ipsam iure molestiae dicta dolores quos sed vero corrupti. Sequi, minima, facilis!</p>
+        </div>
+        <div class="col-md-4 text-center my-3">
+          <img src="imgs/candy-icon.png" alt="bread icon">
+          <h6 class="text-uppercase my-3 services-title">candy</h6>
+          <p class="w-75 mx-auto text-left services-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ipsam iure molestiae dicta dolores quos sed vero corrupti. Sequi, minima, facilis!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end services -->
+  <!-- cake -->
+  <section id="cake" class="cake py-5">
+    <div class="container">
+    <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center">
+        <h1 class="text-capitalize">our <strong class="banner-title">cake</strong> </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-11 col-lg-4 col-md-6 mx-auto my-4 text-capitalize text-center">
+          <h3 class="py-3">birthday cake</h3>
+          <div class="text-muted">
+            <p class="my-3 birthday-cake">birthday cake with a name</p>
+            <p class="my-3 birthday-cake">custom ingredients</p>
+            <p class="my-3 birthday-cake">custom size</p>
+            <p class="my-3 birthday-cake">custom design</p>
+            <button type="button" class="btn btn-yellow text-capitalize mb-3">order now</button>
+            <p class="text-lowecase mb-4">starting at $5</p>
+            <img src="imgs/custom-cake1.png" alt="custome-cake1" class="img-fluid">
+          </div>
+      </div>
+      <div class="col-11 col-lg-4 col-md-6 mx-auto my-4 text-capitalize text-center">
+          <h3 class="py-3">custom cake</h3>
+          <div class="text-muted">
+            <p class="my-3 birthday-cake">birthday cake with a name</p>
+            <p class="my-3 birthday-cake">custom ingredients</p>
+            <p class="my-3 birthday-cake">custom size</p>
+            <p class="my-3 birthday-cake">custom design</p>
+            <button type="button" class="btn btn-yellow text-capitalize mb-3">order now</button>
+            <p class="text-lowecase mb-4">starting at $5</p>
+            <img src="imgs/custom-cake2.png" alt="custome-cake1" class="img-fluid">
+          </div>
+      </div>
+      <div class="col-11 col-lg-4 col-md-6 mx-auto my-4 text-capitalize text-center">
+          <h3 class="py-3">wedding cake</h3>
+          <div class="text-muted">
+            <p class="my-3 birthday-cake">birthday cake with a name</p>
+            <p class="my-3 birthday-cake">custom ingredients</p>
+            <p class="my-3 birthday-cake">custom size</p>
+            <p class="my-3 birthday-cake">custom design</p>
+            <button type="button" class="btn btn-yellow text-capitalize mb-3">order now</button>
+            <p class="text-lowecase mb-4">starting at $5</p>
+            <img src="imgs/custom-cake3.png" alt="custome-cake1" class="img-fluid">
+          </div>
+      </div>
+    </div>
+      </div>
+  </section>
+
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 footer-title py-5">
+        <h1 class="text-capitalize text-center">
+          <strong class="banner-title"> Bakeology</strong>
+        </h1>
+        <div class="footer-icons my-3 d-flex justify-content-center flex-wrap">
+          <a href="www.facebook.com" class="footer-icon-social"><i class="fab fa-facebook"></i> </a>
+          <a href="www.twitter.com" class="footer-icon-social"><i class="fab fa-twitter"></i> </a>
+          <a href="www.instagram.com" class="footer-icon-social"><i class="fab fa-instagram"></i> </a>
+          <a href="www.google.com" class="footer-icon-social"><i class="fab fa-google-plus"></i> </a>
+        </div>
+      </div>
+      <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+        <h3 class="mb-5" id="contect">contact</h3>
+        <p class="d-flex flex-wrap ">
+          <span class="mr-4 footer-icon">
+            <i class="fas fa-map"></i>
+          </span>
+          <span>123 main street, san diago CA 9012</span>
+        </p>
+        <p class="d-flex flex-wrap ">
+          <span class="mr-4 footer-icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>email@email.com</span>
+        </p>
+        <p class="d-flex flex-wrap ">
+          <span class="mr-4 footer-icon">
+            <i class="fas fa-phone"></i>
+          </span>
+          <span>+123 456 789</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- end cake -->
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/home.js"></script>
+</body>
+
+</html>

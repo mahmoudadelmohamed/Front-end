@@ -1,0 +1,212 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+body {
+  font-family: 'Kaushan Script', cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --mainYellow: #FCB62A;
+  --mainBlack: #000;
+  --mainWhite: #FFF;
+  --mainPurple: #600B51;
+  --mainPink: #BF77CD;
+  --overlay: #EDC453;
+  --mainGray: rgb(238, 238, 238);
+}
+.btn-yellow {
+  color: var(--mainYellow)!important;
+  border-color:var(--mainYellow)!important;
+}
+.btn-black {
+  color: var(--mainBlack)!important;
+  border-color:var(--mainBlack)!important;
+}
+.btn-black:hover {
+  color: var(--mainYellow)!important;
+  background:var(--mainBlack)!important;
+}
+.btn-yellow:hover {
+  color: var(--mainBlack)!important;
+  background:var(--mainYellow)!important;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background: var(--mainGray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end global */
+/* navbar */
+.navbar-nav {
+  width: 75%;
+  margin-left: 3rem;
+}
+@media screen and (max-width:992px) {
+  .navbar-nav {
+    margin-left: 0;
+  }
+}
+.navbar-toggler {
+  outline: none !important;
+}
+
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainYellow);
+}
+.nav-link {
+  color: var(--mainYellow);
+  font-size: 1.4rem;
+  transition: all .4s ease-in-out;
+  text-shadow: 10px 10px 10px #000;
+}
+.nav-info-item {
+  font-size: 1.2rem;
+  text-shadow: 10px 10px 10px #000;
+}
+
+.nav-link:hover {
+  color: var(--mainWhite);
+}
+.cart-info-icon {
+ color: var(--mainWhite);
+ cursor: pointer;
+}
+.cart-info {
+  border: 0.1rem solid  var(--mainWhite);
+  color: var(--mainWhite);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+.cart-info:hover {
+  background: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+.nav-info-item {
+  color: var(--mainWhite);
+}
+/* end navbar */
+
+/* banner */
+.max-height {
+  position: relative;
+  min-height: calc(100vh - 79px);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+   url('../imgs/about-cover3.jpg')center/cover no-repeat fixed;
+}
+.banner {
+  color: var(--mainBlack);
+  margin: -4rem;
+}
+.banner-title {
+  font-size: 4rem;
+  color: var(--mainYellow);
+}
+.banner-link {
+  border: 0.2rem solid var(--mainBlack);
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+}
+.banner-link:hover {
+  background: var(--mainBlack);
+  color: var(--mainYellow);
+}
+/* end banner */
+/* about */
+.about-img {
+  width: 100%;
+  display: block;
+}
+.section-padding {
+  padding: 3rem 0;
+}
+.grid-container {
+  max-width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+}
+@media screen and (min-width:768px) {
+  .grid-container-mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  .grid-container {
+    width: 70vw;
+  }
+}
+.section-title {
+  padding: 1rem 0.5rem
+}
+.section-title-name {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.section-title-underline {
+  background: var(--mainYellow);
+  width: 5rem;
+  height: 0.25rem;
+}
+.section-title-text {
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+  color: var(--gray);
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr;
+  grid-gap: 5rem;
+}
+.about-img-item {
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+@media screen and (min-width:768px) {
+    .about-img-spcial {
+      order: -1;
+    }
+}
+/*end about*/
+
+/* footer */
+.footer-title {
+  background: var(--mainBlack);
+}
+.footer-contact {
+  background: var(--mainGray);
+}
+.footer-icon-social {
+   margin-left: 1.5rem;
+   font-size: 1.5rem;
+   color: var(--mainWhite);
+   transition: all 0.2s linear;
+   padding-top: 4rem;
+}
+.footer-icon-social:hover {
+  color: var(--mainYellow);
+
+}
+.footer-icon {
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+#contect {
+  font-size: 3rem;
+}
+/* end footer */
