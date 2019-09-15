@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+ <html lang="en" dir="ltr">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/static.css">
+    <!-- animation cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <!--modle css -->
+    <link rel="stylesheet" href="css/food.css">
+   <title>Coffee Shop</title>
+ </head>
+   <body>
+     <a href="#" class="btn up-link text-uppercase my-2" id="upButton">
+       <i class="fas fa-arrow-up"></i>
+     </a>
+     <!-- Header -->
+    <header class="main-header">
+      <nav class="navbar navbar-expand-lg ">
+     <a class="navbar-brand" href="#"><img src="img/logo5.png" alt="logo" class="logo"></a>
+     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="toggler-icon"><i class="fas fa-bars"></i> </span>
+      </button>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="navbar-nav ml-auto text-uppercase animated bounceInDown">
+         <li class="nav-item active">
+           <a class="nav-link" href="index.html">Home</a>
+         </li>
+         <li class="nav-item active">
+           <a class="nav-link" href="#about">About</a>
+         </li>
+         <li class="nav-item active">
+           <a class="nav-link" href="index.html">services</a>
+         </li>
+         <li class="nav-item active">
+           <a class="nav-link" href="index.html">contact</a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+<div class="content-header animated bounceInLeft">
+<div class="content-main-header text-uppercase">
+    <h1 class="header-font">welcome to <span class="colorchange">alpha caffee. </span>
+      <br> house of cake and food</h1>
+  <div class="row">
+    <a href="#" class="btn btn-left">click to order</a>
+    <a href="index.html" class="btn btn-right">Back to home</a>
+  </div>
+</div>
+  </div>
+  <div class="header-link-content">
+    <a href="#order" class="btn header-link primary-color">
+      <img src="img/scroll3.png" alt="">
+    </a>
+  </div>
+    </header>
+    <!--end Header -->
+
+    <section id="store" class="store py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center py-4">
+        <h1 class="text-capitalize">our <strong class="banner-title">food</strong> </h1>
+      </div>
+    </div>
+    <!-- fillter button -->.
+   <div class="row">
+     <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+       <a href="#" class="btn btn-black text-uppercase filter-btn m-2 active-button" data-filter="all">all</a>
+       <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="fast-food">fast food</a>
+       <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="asian-food">asian food</a>
+       <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="vegetables">vegetables</a>
+<!--vegetables  -->
+     </div>
+   </div>
+   <!-- end fillter button -->
+     <h3 class="col-10 mx-auto col-sm-6 text-center text-capitalize not-found">This item not found</h3>
+    <!--end search box -->
+    <div class="row store-items">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item " >
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-1.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-one</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="1">15.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-2.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-two</h5>
+           <h5 class="stror-item-value"> $
+             <strong id="store-item-price" class="font-weight-blod" data-id="2">10.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item ">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-3.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-three</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod"  data-id="3">12.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item ">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-4.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-four</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="4">13.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item ">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-5.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-five</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="5">20.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item ">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-6.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-six</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="6">7.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item ">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-7.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-seven</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="7">10.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item ">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-9.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-eight</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="8">15.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item ">
+        <div class="card single-item fast-food">
+          <div class="img-container">
+            <img src="imgSandwich/sandwich-11.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">sandwich-nine</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">10.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start asian -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item asian-food">
+          <div class="img-container">
+            <img src="imgSandwich/asian-1.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">asian-one</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">10.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item asian-food">
+          <div class="img-container">
+            <img src="imgSandwich/asian-2.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">asian-two</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">15.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item asian-food">
+          <div class="img-container">
+            <img src="imgSandwich/asian-3.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">asian-three</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">12.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item asian-food">
+          <div class="img-container">
+            <img src="imgSandwich/asian-4.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">asian-four</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">18.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item asian-food">
+          <div class="img-container">
+            <img src="imgSandwich/asian-5.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">asian-five</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">20.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item asian-food">
+          <div class="img-container">
+            <img src="imgSandwich/asian-6.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">asian-six</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">10.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end asian -->
+
+      <!-- start salad -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item vegetables">
+          <div class="img-container">
+            <img src="imgSandwich/salad-1.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">vegan-one</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">10.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item vegetables">
+          <div class="img-container">
+            <img src="imgSandwich/salad-2.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">vegan-two</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">15.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item">
+        <div class="card single-item vegetables">
+          <div class="img-container">
+            <img src="imgSandwich/salad-3.jpg" class="card-img-top store-img" alt="">
+          </div>
+          <div class="card-body">
+            <div class="cart-text d-flex justify-content-between text-capitalize">
+              <h5 class="store-item-name">vegan-three</h5>
+              <h5 class="stror-item-value"> $ <strong id="store-item-price"
+                class="font-weight-blod" data-id="9">20.00</strong> </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end salad -->
+     </div>
+  </div>
+    </section>
+ <!-- end about  -->
+    <!-- contact -->
+   <footer id="contact">
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-6 footer-title py-5">
+           <h1 class="text-capitalize text-center">
+             <strong class="banner-title"> Alpha</strong>
+           </h1>
+           <div class="footer-icons my-3 d-flex justify-content-center flex-wrap">
+             <a href="www.facebook.com" class="footer-icon-social"><i class="fab fa-facebook"></i> </a>
+             <a href="www.twitter.com" class="footer-icon-social"><i class="fab fa-twitter"></i> </a>
+             <a href="www.instagram.com" class="footer-icon-social"><i class="fab fa-instagram"></i> </a>
+             <a href="www.google.com" class="footer-icon-social"><i class="fab fa-google-plus"></i> </a>
+           </div>
+         </div>
+         <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+           <h3 class="mb-5" id="contect">contact</h3>
+           <p class="d-flex flex-wrap ">
+             <span class="mr-4 footer-icon">
+               <i class="fas fa-map"></i>
+             </span>
+             <span>123 main street, san diago CA 9012</span>
+           </p>
+           <p class="d-flex flex-wrap ">
+             <span class="mr-4 footer-icon">
+               <i class="fas fa-envelope"></i>
+             </span>
+             <span>email@email.com</span>
+           </p>
+           <p class="d-flex flex-wrap ">
+             <span class="mr-4 footer-icon">
+               <i class="fas fa-phone"></i>
+             </span>
+             <span>+123 456 789</span>
+           </p>
+         </div>
+       </div>
+     </div>
+   </footer>
+  <!--end  contact -->
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- magnific popup -->
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <!-- script js -->
+    <script src="js/food.js"></script>
+
+
+
+   </body>
+ </html>
+
+ <!-- end work -->

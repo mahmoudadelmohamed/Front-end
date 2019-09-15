@@ -1,0 +1,45 @@
+.main-header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url('../img/order-cover.jpg')center/cover no-repeat fixed;
+}
+.btn-black {
+  border-radius: 0px;
+  border-color: #FFF !important;
+  color: #FFF !important;
+}
+.btn-black:hover {
+  border-radius: 0px;
+  border-color: #FFF !important;
+  color: #FFF !important;
+}
+.content-order-food, .content-order-beverage,  .content-order-market{
+  color: #FFF;
+  font-weight: bold;
+}
+.content-order-food {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url('../img/fresh-food3.jpg')center/cover no-repeat ;
+}
+.content-order-beverage {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url('../img/beer-header3.jpg')center/cover no-repeat ;
+}
+.content-order-market {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url('../img/market-header1.jpg')center/cover no-repeat ;
+}
+@media screen and (min-width:992px) {
+  .about-img-container-left img{
+    border-radius: 0.25rem;
+    margin-left: 2rem;
+  }
+}
+.about-img-container-right img{
+  border-radius: 0.25rem;
+}
+@media screen and (min-width:992px) {
+  .about-img-container-right {
+    margin-right: 4rem;
+  }
+}

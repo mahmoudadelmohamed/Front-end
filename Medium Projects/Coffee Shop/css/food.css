@@ -1,0 +1,24 @@
+.main-header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url('../img/food-cover.jpg')center/cover no-repeat fixed;
+}
+.not-found {
+  display: none;
+}
+.not-found {
+  border: 0.2rem solid var(--mainYellow);
+  padding:  1rem;
+  color: red;
+  margin: 2rem;
+  font-size: 3rem;
+  border-radius: 0.2rem;
+}
+
+.btn-black {
+  border-radius: 0.25rem;
+}
+.btn-black.active-button {
+  background: var(--mainBlack);
+   color: var(--mainYellow) !important;
+}
