@@ -1,0 +1,27 @@
+.form-control-plaintext {
+  width: 80%;
+  padding: 0.75rem;
+  border-radius: 1rem !important;
+  border: 2px solid #3498DB;
+  outline: none;
+}
+.form-group {
+
+}
+#search_icon {
+   position: absolute;
+   left: 11%;
+   right: 0;
+   color: #444;
+   font-size: 1rem;
+}
+#search_field {
+  font-size: 1rem;
+  padding-left: 2rem;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
