@@ -86,7 +86,7 @@
   text-decoration: none;
 }
 /*---------- Cart Item -------------------- */
-#selected {
+#selected, #selected_tv {
   height: 35px;
   width: 170px;
   outline: none !important;
@@ -147,9 +147,23 @@
 .gener {
   padding-left: 2rem;
 }
+.categorie {
+  margin-left: 1rem;
+}
 .thumbnail {
  border-radius: 0.5rem;
 }
- .space_title {
-   margin-top: 2rem;
- }
+.space_title {
+ margin-top: 2rem;
+}
+#overview_episode {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.line {
+  color: #FFF;
+  opacity: 0.2;
+}
+#inside_episode {
+ 
+}

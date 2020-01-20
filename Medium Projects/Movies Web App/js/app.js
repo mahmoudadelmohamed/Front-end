@@ -3,10 +3,10 @@ let target = `/search/movie`;
 let api_key = `?api_key=ea9e6ac8643082244c38fae131ea1769`;
 let query_request = `&query=`;
 const img_request = `https://image.tmdb.org/t/p/w500`;
-const image = `https://api.themoviedb.org/3/movie/238/images?api_key=ea9e6ac8643082244c38fae131ea1769`
 const discover = `https://api.themoviedb.org/3/discover/movie?api_key=ea9e6ac8643082244c38fae131ea1769`
 
-
+const cartOverlay = document.querySelector('.cart-overlay');
+const cartDOM = document.querySelector('.cart');
 const burger_btn = document.querySelector('.burger-btn');
 const colseCartBtn = document.querySelector('.close-cart');
 const select = document.querySelector('#selected');
@@ -16,23 +16,19 @@ const cover_movie = document.querySelector('.max-height');
 const inside_similar = document.querySelector('#inside_similar');
 const inside_recomended = document.querySelector('#inside_recomended');
 
-
 function makeUrl(url, target, api_key) {
-    return url + target + api_key ;
+  return url + target + api_key ;
 }
 function FetchingData(url) {
-
   fetch(url)
   .then(response => response.json())
   .then(data => {
     let output = '';
     let remote_data = data.results;
-    // pushContent(remote_data, inside_row);
     remote_data.map(items => {
       conditionalDate(items);
       conditionalName(items);
    output += `
-
      <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
       <div class="card single-item">
       <div class="img-container">
@@ -49,7 +45,6 @@ function FetchingData(url) {
       </div>
       </div>
      </div>
-
     `
     })
     // console.log(inside_row);
@@ -66,8 +61,8 @@ function movieSelectd(id) {
   return false;
 }
 function getMovie() {
+
   let movies = sessionStorage.getItem('movieId');
-  let target = `/movie/${movies}/images`;
   let new_url = makeUrl(url, `${target}`, api_key);
   let recomended = `/movie/${movies}/recommendations`;
   let similer = `/movie/${movies}/similar`;
@@ -79,15 +74,16 @@ function getMovie() {
   let details_movies = makeUrl(url, `${details}`, api_key);
   let trailer = makeUrl(url, `${vedio}`, api_key);
 
-  // console.log(similar_movies);
   FetchingMovies(details_movies, trailer, similar_movies, recommendation_movies);
 }
-function FetchingMovies(url, trailer, similar_movies, recommendation_movies) {
+
+function FetchingMovies(details_movies, trailer, similar_movies, recommendation_movies) {
   let output = '';
 
-  fetch(url)
+  fetch(details_movies)
   .then(response => response.json())
   .then(data => {
+    console.log(data);
     let date = data.release_date;
     let new_date = date.substring(0,4);
     cover_movie.style.background =`
@@ -100,14 +96,19 @@ function FetchingMovies(url, trailer, similar_movies, recommendation_movies) {
       <img src="https://image.tmdb.org/t/p/w300${data.poster_path}" class="thumbnail">
     </div>
     <div class="col-md-6">
-      <h3 class="movie_title">${data.title}</h3>
+      <h3 class="movie_title text-uppercase">${data.title}</h3>
       <div class="row" id="movie_info">
         <h5 class="release_date mt-3"> ${new_date}</h5>
         <h5 class="gener mt-3"><i class="far fa-clock"></i> ${data.runtime} min</h5>
         <h5 class="gener mt-3"><i class="far fa-star"></i> ${data.vote_average}</h5>
       </div>
+      <div class="row" id="">
+      <h5 class="categorie mt-3"><i class="far fa-dot-circle"></i> ${data.genres[0].name}</h5>
+         <h5 class="categorie mt-3"><i class="far fa-dot-circle"></i> ${data.genres[1].name}</h5>
+      </div>
     <p class="movie_review mt-3 pb-3">${data.overview}</p>
-    <a href="https://www.youtube.com/" id="trailer" target="_blank" data-id="https://www.youtube.com/">Trailer</a>
+    <a href="https://www.youtube.com/" id="trailer" target="_blank"
+    data-id="https://www.youtube.com/">Trailer</a>
     <button type="button" id="button" class="btn btn-light btn-block mt-5">
          Watch Now
     </button>
@@ -148,7 +149,7 @@ function FetchingMovies(url, trailer, similar_movies, recommendation_movies) {
   })
 }
 function pushContent(items, inside_contetnt) {
-  console.log(items);
+
   let output = '';
   if(items.length >= 20) {
     items.length = 8;
@@ -199,30 +200,23 @@ select.onchange = function (e) {
   let new_url = makeUrl(url, `${request}`, api_key);
   FetchingData(new_url);
 }
-class UI {
-  constructor() {
-    this.cartOverlay = document.querySelector('.cart-overlay');
-    this.cartDOM = document.querySelector('.cart');
-  }
-closeCart(e){
+function closeCart(e){
   if(e.target.className === 'fas fa-window-close' ||
     e.target.className === 'cart-overlay transparentBcg') {
-      this.cartOverlay.classList.remove('transparentBcg');
-      this.cartDOM.classList.remove('showCart');
+      cartOverlay.classList.remove('transparentBcg');
+      cartDOM.classList.remove('showCart');
   }
 }
-showCart() {
-  this.cartOverlay.classList.add('transparentBcg');
-  this.cartDOM.classList.add('showCart');
-  }
+function showCart() {
+  cartOverlay.classList.add('transparentBcg');
+  cartDOM.classList.add('showCart');
 }
 function eventsFunction() {
-  const ui = new UI;
   document.addEventListener('click', (e)=> {
-     ui.closeCart(e)
+      closeCart(e)
   })
   burger_btn.addEventListener('click', (e)=> {
-      ui.showCart();
+       showCart();
   })
 }
 eventsFunction();

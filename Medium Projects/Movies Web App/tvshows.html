@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- font awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/static.css">
+  <title>Movies App</title>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <a class="navbar-brand" href="#">
+       <i class="fas fa-bars burger-btn"></i>
+     </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarColor02">
+     <select class="form-control" id="selected_tv">
+       <option value="/tv/top_rated">Discover</option>
+       <option value="/tv/top_rated">Top Rated</option>
+       <option value="/tv/airing_today">Airing Today</option>
+       <option value="/tv/on_the_air">On The Air</option>
+       <option value="/tv/popular">Poupler</option>
+     </select>
+       <div class="form-inline my-2 my-lg-0 ml-auto">
+         <a href="search.html" id="search-icon">
+             <i class="fas fa-search"></i>
+         </a>
+       </div>
+     </div>
+   </nav>
+    <div class="container">
+       <div class="row" id="inside_tv">
+
+     </div>
+   </div>
+
+
+
+   <!-- Start Cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+       <span class="close-cart"> <i class="fas fa-window-close"></i></span>
+         <div class="cart-footer d-flex mt-5">
+           <i class="far fa-credit-card icon-movies"></i>
+           <a href="#">
+             <h5 class="title-movies">Editor's Choice</h5>
+           </a>
+         </div>
+         <div class="cart-footer d-flex mt-5">
+           <i class="fas fa-film icon-movies"></i>
+            <a href="tvshows.html">
+            <h5 class="title-movies" id="tv_shows">TV Shows</h5>
+            </a>
+         </div>
+         <div class="cart-footer d-flex mt-5">
+           <i class="fas fa-tv icon-movies"></i>
+           <a href="index.html">
+             <h5 class="title-movies">Movies</h5>
+           </a>
+         </div>
+         <div class="cart-footer d-flex mt-5">
+           <i class="fas fa-paw icon-movies"></i>
+           <a href="#">
+             <h5 class="title-movies">Anime</h5>
+           </a>
+         </div>
+         <div class="cart-footer d-flex mt-5">
+           <i class="fas fa-play"></i>
+           <a href="#">
+             <h5 class="title-movies">HD Releases</h5>
+           </a>
+         </div>
+         <hr class="line">
+       <div class="cart-footer d-flex mt-5">
+         <i class="far fa-bookmark icon-movies"></i>
+        <a href="#">
+          <h5 class="title-movies">Watchlist</h5>
+        </a>
+       </div>
+       <div class="cart-footer d-flex mt-5">
+        <i class="far fa-images icon-movies"></i>
+        <a href="#">
+          <h5 class="title-movies">Collection</h5>
+        </a>
+       </div>
+    </div>
+  </div>
+   <!-- End Cart -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/content.js"></script>
+
+  </body>
+</html>

@@ -12,34 +12,26 @@
 
   </head>
   <body>
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <i class="fas fa-bars burger-btn"></i>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor02">
-    <select class="form-control" id="selected">
-      <option value="/discover/movie"> Discover</option>
-      <option value="/trending/all/week">Trending</option>
-      <option value="/movie/popular">Poupler</option>
-      <option value="/movie/top_rated">Top Rated</option>
-      <option value="/movie/upcoming">Upomming</option>
-      <option value="/movie/now_playing">Now Playing</option>
-    </select>
-      <div class="form-inline my-2 my-lg-0 ml-auto">
-        <a href="search.html" id="search-icon">
-            <i class="fas fa-search"></i>
-        </a>
+  <!-- banner -->
+  <div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+      <div class="col-10 mx-auto banner">
+         <div class="row  align-items-center" id="movies_container">
+
+         </div>
+
       </div>
     </div>
-  </nav>
-   <div class="container">
-      <div class="row" id="inside_row">
+  </div>
+  <!-- end banner  -->
+
+  <!-- seeasons  -->
+  <div class="container">
+    <div class="row" id="seasons_container">
 
     </div>
   </div>
+  <!-- end seeasons  -->
   <!-- Start Cart -->
  <div class="cart-overlay">
    <div class="cart">
@@ -90,11 +82,12 @@
    </div>
  </div>
   <!-- End Cart -->
-  <!-- Push data from API -->
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/app.js"></script>
-
-  </body>
-</html>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/content.js"></script>
+    <script>
+      getShow();
+    </script>
+    </body>
+  </html>
