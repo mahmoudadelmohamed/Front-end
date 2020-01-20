@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/static.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <!-- <i class="fas fa-hand-scissors fa-10x"></i> -->
+    </header>
+
+    <div class="score-boaed">
+      <div id="user-label" class="badge">Player</div>
+      <div id="computer-label" class="badge">Computer</div>
+      <div class="score" id="score">
+         <span id="player-score">0</span>:<span id="computer-score">0</span>
+      </div>
+    </div>
+
+    <div class="choices">
+      <div class="choice">
+        <img src="imgs/rock1.png" id="rock"/>
+      </div>
+      <div class="choice">
+        <img src="imgs/paper1.png" id="paper">
+      </div>
+      <div class="choice">
+        <img src="imgs/scissors1.png" id="scissors" />
+      </div>
+    </div>
+
+    <div class="modal">
+      <div id="result" class="modal-content">
+        <h1 class="text-win">You Win</h1>
+        <i class="fas fa-hand-scissors fa-10x"></i>
+        <p>Computer Chose Rock</p>
+         <button type="button" id="restart">Restart Game</button>
+      </div>
+
+    </div>
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
