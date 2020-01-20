@@ -1,0 +1,113 @@
+:root {
+  --mainWhite: #f5f5f5f5;
+  --mainDark: #333333;
+  --mainGreen: #317b22;
+  --mainRed: #b80c09;
+  --mainBlue: #05668d;
+}
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+.budget-feedback,
+.expense-feedback {
+  display: none;
+}
+.budget-form {
+  border: 0.15rem solid var(--mainGreen);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+ .expense-form {
+   border: 0.15rem solid var(--mainRed);
+   padding: 1rem;
+   border-radius: 0.25rem;
+ }
+ .budget-submit {
+   color: var(--mainGreen);
+   background: transparent;
+   border: 0.1rem solid var(--mainGreen);
+ }
+ .expense-submit {
+   color: var(--mainRed);
+   background: transparent;
+   border: 0.1rem solid var(--mainRed);
+ }
+.expense-submit:hover {
+  background: var(--mainRed);
+  color: var(--mainWhite);
+}
+.budget-submit:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.budget-input {
+  border: 0.05rem solid var(--mainGreen) !important;
+}
+.expense-input {
+  border: 0.05rem solid var(--mainRed) !important;
+}
+.expense-amount {
+  color: var(--mainRed);
+}
+#edit{
+  color: var(--mainBlue);
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+#delete {
+  color: var(--mainRed);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.delete-icon, .edit-icon {
+ text-decoration: none !important;
+}
+.fas, .far {
+  color: var(--mainBlue);
+  font-size: 3rem;
+  cursor: pointer;
+}
+.budget {
+  font-size: 2rem;
+  color: var(--mainGreen);
+}
+.info-title {
+  font-size:1.5rem;
+}
+.expense {
+  font-size: 2rem;
+  color: var(--mainRed);
+}
+.balance {
+  font-size: 2rem;
+}
+
+.showRed {
+  color: var(--mainRed);
+}
+.showGreen {
+  color: var(--mainGreen);
+}
+.showBlack {
+  color: var(--mainDark);
+}
+@media screen and (min-width: 992px) {
+  .budget {
+    font-size: 3rem;
+  }
+  .expense {
+    font-size: 3rem;
+  }
+  .balance {
+    font-size: 3rem;
+  }
+  .fas, .far {
+     font-size: 3.5rem;
+  }
+  .list-item {
+  flex: 0 0 33.33%;
+  text-align: center;
+}
+}
